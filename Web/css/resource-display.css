@@ -1,0 +1,240 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#placeholder {
+  margin-bottom: -40px;
+}
+.resource-display-available,
+.resource-display-unavailable,
+.resource-display-checkin {
+  background-color: #88CC88;
+  border: solid 1px #76c476;
+  text-align: center;
+  color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-weight: bold;
+  line-height: 26px;
+  width: 60%;
+}
+.resource-display-action {
+  line-height: 60px;
+  font-size: 2em;
+  text-transform: uppercase;
+  border: solid 1px #353432;
+  background-color: #FFF8E7;
+  margin: 20px 0;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: auto;
+  display: inline-block;
+  padding: 0 20px;
+}
+.resource-display-unavailable {
+  background-color: #AA3939;
+  border: solid 1px #973333;
+}
+.resource-display-name,
+.resource-display-date {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #F9F9F9;
+}
+.resource-display-date {
+  text-align: right;
+  color: #BCBCBC;
+}
+.resource-display {
+  display: flex;
+  flex-direction: row;
+}
+.resource-display .resource-display-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #BCBCBC;
+}
+.resource-display .time,
+.resource-display .date {
+  color: #FFF8E7;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: right;
+}
+.resource-display .date {
+  font-size: 1.5em;
+  color: #E9E9E9;
+}
+.resource-display .upcoming-reservations,
+.resource-display .resource-display-current {
+  padding-top: 80px;
+  overflow-y: hidden;
+}
+.resource-display .upcoming-reservations {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+}
+.resource-display .upcoming-separator {
+  height: 1px;
+  padding: 0;
+  margin: 5px 0;
+  border: 0;
+  background-color: #778899;
+}
+.panel {
+  padding: 10px;
+  flex: 1;
+}
+.left-panel {
+  background-color: #778899;
+}
+.left-panel-bottom {
+  position: absolute;
+  bottom: 10px;
+}
+.right-panel {
+  background-image: linear-gradient(-90deg, #495561, #778899);
+}
+.resource-display-reservation,
+.resource-display-none {
+  color: #FFF8E7;
+  font-size: 1.3em;
+}
+.resource-display-reservation .title,
+.resource-display-none .title {
+  font-style: italic;
+}
+#page-resource-display-resource #reservations {
+  width: 100%;
+}
+#page-resource-display-resource table.reservations {
+  margin-bottom: 15px;
+  width: 100%;
+}
+#page-resource-display-resource table.reservations td {
+  font-size: 1.1em;
+}
+#page-resource-display-resource table.reservations tbody td {
+  height: 32px;
+}
+#page-resource-display-resource #reservation-box-wrapper {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #353432;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  display: none;
+}
+#page-resource-display-resource #reservation-box {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  left: 5%;
+  width: 90%;
+  border: solid 2px #585754;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 16px;
+  display: none;
+}
+#page-resource-display-resource .action-reserve {
+  font-size: 1.6em;
+  line-height: 50px;
+  border: solid 1px #88CC88;
+  text-align: center;
+  background-color: #f3faf3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+#page-resource-display-resource .action-cancel {
+  margin-top: 20px;
+  text-align: center;
+  color: #AA3939;
+  font-size: 1.2em;
+  display: inline-block;
+}
+#page-resource-display-resource #validationErrors {
+  text-align: left;
+}
+#page-resource-display-resource #emailAddress {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+}
+#page-resource-display-resource .twitter-typeahead {
+  flex-grow: 1;
+}
+.resource-info .resource-info-name {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.resource-info .resource-info-image-container {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.resource-info .resource-info-image {
+  max-height: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+.resource-info .attribute-label,
+.resource-info .resource-info-label {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+.resource-info .resource-info-value {
+  display: block;
+}
+.resource-info .resource-info-contents {
+  max-height: 190px;
+  overflow-y: auto;
+}
+.resource-info .resource-info-contents.no-images {
+  max-height: 300px;
+}
+@media (min-width: 576px) {
+  .resource-info .resource-image-carousel {
+    width: 450px;
+  }
+}
+@media (max-width: 576px) {
+  .resource-info-popup {
+    max-width: 100%;
+    width: 100%;
+  }
+  .resource-info .resource-info-image-container {
+    width: 100vw;
+  }
+  .resource-info .img-thumbnail {
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,10 @@
+<Limit GET POST PUT DELETE OPTIONS>
+  Allow from all
+</Limit>
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

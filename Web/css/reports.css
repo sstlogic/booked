@@ -1,0 +1,105 @@
+#custom-report-input {
+  font-size: 10pt;
+  padding: 0 10px;
+}
+#custom-report-input .remove-button {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+#custom-report-input .label {
+  display: inline-block;
+  width: 95px;
+  font-size: 11pt;
+}
+#custom-report-input label {
+  display: inline-block;
+  width: 100px;
+}
+#custom-report-input .input-set {
+  /*float: left;*/
+  padding-right: 15px;
+  padding-bottom: 2px;
+}
+#report-results {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#report-results th {
+  text-align: left;
+  border-bottom: solid 3px #333;
+  font-size: 9pt;
+}
+#report-results td {
+  padding: 3px 2px;
+  border-bottom: solid 1px #ccc;
+}
+#report-results tr.alt td,
+#report-list .alt {
+  background-color: #ededed;
+}
+#report-actions {
+  text-align: right;
+  margin: 15px;
+}
+#report-actions .btn {
+  text-decoration: none;
+}
+#report-list .btn.report {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+#report-list table {
+  margin-bottom: 0;
+}
+#report-list ul {
+  list-style-type: none;
+}
+#report-list li {
+  padding: 3px 0;
+}
+#report-list li:hover {
+  background-color: #FFFF99;
+}
+#report-list .report-action {
+  margin-left: 0.5rem;
+}
+.report-title {
+  font-weight: bold;
+  color: #444;
+  font-size: 12pt;
+  min-width: 200px;
+}
+.report-created-date {
+  font-style: italic;
+}
+.filter-off {
+  display: none;
+}
+.link-filter {
+  display: inline-block;
+}
+#report-list .right {
+  text-align: right;
+}
+#rangeDiv input[type="input"] {
+  height: 20px;
+}
+.input-set span {
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+.input-set .select2-container {
+  margin: 0;
+}
+.form-control-feedback {
+  pointer-events: auto;
+}
+#generate-report #saveMessage {
+  text-align: center;
+}
+#page-generate-report .form-label {
+  margin: 0;
+}

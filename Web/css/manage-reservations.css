@@ -1,0 +1,75 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-manage-reservations .resource .online {
+  color: green;
+}
+#page-manage-reservations .resource .offline {
+  color: red;
+}
+#page-manage-reservations .resource .hidden {
+  color: #585754;
+}
+#page-manage-reservations #reservation-list span.label,
+#page-manage-reservations #reservation-list label.customAttribute {
+  font-weight: 600;
+  margin: 0;
+}
+#page-manage-reservations #reservation-list .reservation-update-row {
+  min-width: 130px;
+  max-width: 130px;
+}
+#page-manage-reservations #reservation-list .reservation-update-row button,
+#page-manage-reservations #reservation-list .reservation-update-row a {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+#page-manage-reservations .reservation-sort-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: solid 1px #BCBCBC;
+  align-items: end;
+}
+#page-manage-reservations .reservation-sort-row label {
+  font-size: 0.8rem;
+}
+#page-manage-reservation-colors .manage-color-rules-attribute-value .form-label {
+  display: none;
+}
+#page-manage-reservation-colors .manage-color-rules-section {
+  border: solid 1px #BCBCBC;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+}
+#page-manage-reservation-colors .manage-color-rules-section .manage-color-rules-section-title {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 4px;
+}
+#page-manage-reservation-colors .manage-color-rules-list-color-col {
+  width: 250px;
+}
+#page-manage-reservation-colors .manage-color-rules-list-priority-col {
+  width: 150px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #page-manage-reservations #reservation-list .reservation-update-row {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #page-manage-reservations #reservation-list button,
+  #page-manage-reservations #reservation-list a {
+    margin-bottom: auto;
+  }
+}

@@ -1,0 +1,177 @@
+@import "elements.less";
+@import "colors.less";
+
+@dashboard-color: @muted-blue;
+@dashboard-border-color: darken(@dashboard-color, 5%);
+
+#page-dashboard .panel-heading {
+  background-color: @dashboard-color;
+  color: #fff;
+}
+
+#page-dashboard .panel-heading, #page-dashboard .panel {
+  border-color: @dashboard-border-color;
+}
+
+.dashboard {
+  margin-top: 15px;
+  background-color: @color-boxes-content;
+  .rounded();
+  .box-shadow(0px 0px 5px 1px @color-boxes-primary-0);
+}
+
+#dashboardList .dashboard:first-child {
+  margin-top: 0;
+}
+
+.dashboard-contents {
+  padding: 15px;
+  border: 1px solid @color-boxes-complement-3;
+}
+
+.dashboard-header {
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: @color-boxes-complement-2; //@color-secondary-2-0;
+  .badge {
+    background-color: @color-boxes-complement-1;
+  }
+
+  .btn-link {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn.btn-link:hover {
+    color: #fff;
+  }
+
+  a, a:hover, a:visited, a:active {
+    color: #fff;
+  }
+}
+
+.dashboard .noresults {
+  text-align: center;
+  font-style: italic;
+}
+
+.dashboard-contents a {
+  color: #3D72A4;
+  padding: 5px;
+}
+
+.dashboard-contents .table {
+  margin-bottom: 1px;
+}
+
+.upcoming-reservations-dashboard {
+  .timespan {
+    padding: 3px;
+    font-style: italic;
+    color: #777;
+    border-bottom: 1px solid @light-gray;
+  }
+
+  .reservation {
+    padding: 3px 0;
+    border-bottom: 1px solid @light-gray;
+    margin: 0 3px;
+  }
+
+  .reservation.hover {
+    cursor: pointer;
+    background-color: lighten(@muted-blue, 25%);
+    color: #222;
+  }
+
+  .reservation.clicked {
+    cursor: pointer;
+    background-color: #F0F0F0;
+  }
+
+  .reservation.pending {
+    background-color: #ffb540
+  }
+
+  .reservation.pending.hover, .reservation.pending.clicked {
+    background-color: #ffc973;
+  }
+}
+
+.availabilityDashboard {
+  .header {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .resourceName {
+    text-overflow: ellipsis;
+    color: @color-secondary-2-3;
+
+    a {
+      color: #000000;
+    }
+
+    .rounded(4px);
+    padding: 2px;
+    display: inline-block;
+    margin-right: 2px;
+
+    .fa:last-of-type {
+      margin-right: 2px;
+    }
+
+    background-color: @color-secondary-2-1;
+
+  }
+
+  .availability {
+    font-style: italic;
+    color: #585754;
+  }
+
+  .reserve-button {
+    text-align: right;
+  }
+
+  .availability-item {
+    padding: 5px 0;
+    @btn-color: @color-complement-3;
+
+    .btn {
+      background-color: @btn-color;
+      color: #fff;
+      border-color: darken(@btn-color, 10%);
+      padding: 1px 20px;
+    }
+
+    .btn:hover {
+      background-color: darken(@btn-color, 5%);
+      border-color: darken(@btn-color, 15%);
+    }
+  }
+
+  h5 {
+    margin: 0;
+    font-weight: bold;
+    color: @mid-gray;
+  }
+}
+
+.dashboard-resource-names {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dashboard-waitlist-count {
+  display: inline-block;
+  background-color: @dashboard-border-color;
+  color: #fff;
+  //border-radius: .25rem;
+  //padding: .35em .65em;
+  //font-size: .8rem;
+}

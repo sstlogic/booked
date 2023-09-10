@@ -1,0 +1,33 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+#reservation-list .reservation {
+  padding: 0.5rem;
+}
+#reservation-list .search-reservation-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #585754;
+  text-transform: uppercase;
+}
+#reservation-list .search-reservation-data {
+  margin-bottom: 6px;
+}
+#reservation-list .row1 {
+  border-top: solid 1px #BCBCBC;
+  border-bottom: solid 1px #BCBCBC;
+}
+.reservation-search-result-count {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

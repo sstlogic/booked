@@ -1,0 +1,22 @@
+.participation .invitation-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+.participation .invitation-dates {
+  margin-bottom: 0.25rem;
+}
+.participation .invitation-owner {
+  margin-bottom: 0.25rem;
+}
+.participation li {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+}
+.participation li.actions {
+  border-bottom: solid 1px #dddddd;
+}
+.participation .row1 {
+  background-color: #fff;
+}

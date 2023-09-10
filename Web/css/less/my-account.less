@@ -1,0 +1,45 @@
+@import "elements.less";
+@import "colors.less";
+
+.page-notification-preferences {
+  .phone-confirmation-div {
+    .phone-label {
+      font-size: .9em;
+      color: @dark-gray;
+      text-transform: uppercase;
+    }
+
+    .phone-number {
+      font-size: 1.3em;
+    }
+  }
+
+  .notification-row {
+    border-top: solid 1px @light-gray;
+    padding: 1rem 0;
+
+    .notification-type-title {
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: .25rem;
+    }
+
+    .notification-row-description {
+      color: @dark-gray;
+    }
+  }
+}
+
+.page-profile {
+  #timezone-warning {
+    display: none;
+    color: @muted-red;
+    font-size: .8rem;
+  }
+
+  .profile-created-message {
+    margin-bottom: .5em;
+    font-style: italic;
+    color: @dark-gray;
+  }
+}

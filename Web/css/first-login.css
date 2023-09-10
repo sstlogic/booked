@@ -1,0 +1,32 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#first-login-page h2 {
+  border: solid 1px #97bcdc;
+  border-radius: 0.25rem;
+  padding: 15px;
+  background-color: #e7eff7;
+}
+#first-login-page .admin-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  padding: 5px 0;
+  border: solid 1px #baba9a;
+  display: block;
+  background-color: lightyellow;
+  margin: 10px auto;
+}
+#first-login-page .card {
+  height: 100%;
+}

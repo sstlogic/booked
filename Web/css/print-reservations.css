@@ -1,0 +1,45 @@
+#page-print-reservation-list #print-reservations {
+  border: solid 1px #000;
+  width: 100%;
+  table-layout: fixed;
+}
+#page-print-reservation-list #print-reservations td,
+#page-print-reservation-list #print-reservations th {
+  border: solid 1px #000;
+  padding: 5px;
+}
+#page-print-reservation-list #print-reservations td {
+  vertical-align: top;
+}
+#page-print-reservation-list #print-reservations .print-reservations-time-col {
+  width: 100px;
+}
+#page-print-reservation-list .resource-list {
+  display: flex;
+  flex-direction: column;
+}
+#page-print-reservation-list .print-resource-name,
+#page-print-reservation-list .print-date {
+  text-align: center;
+  font-size: 1.5em;
+}
+#page-print-reservation-list .print-reservations-event {
+  border-radius: 5px;
+  padding: 5px;
+}
+#page-print-reservation-list .print-reservations-event:not(:first-child) {
+  margin-top: 20px;
+}
+@media print {
+  #page-print-reservation-list #print-reservations {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-color: #000;
+    padding: 0;
+  }
+}
+@media print {
+  #page-reservation .reservation-resource .bi {
+    display: none;
+  }
+}

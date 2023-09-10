@@ -1,0 +1,24 @@
+@import "colors";
+
+#page-manage-quotas {
+  .manage-quotas-list {
+    width: 100%;
+  }
+
+  .manage-quotas-list-item:nth-child(even) {
+    background-color: @alt-row-background;
+  }
+
+  .manage-quotas-list-item {
+    border-top: solid 1px @mid-gray;
+    padding: 1em 0;
+  }
+
+  .manage-quotas-list-item:last-of-type {
+    border-bottom: solid 1px @mid-gray;
+  }
+
+  .manage-quotas-list-item-label {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,94 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+.calendarHeading {
+  color: #666666;
+  border-bottom: solid 1px #666666;
+  padding: 10px 0px 3px 5px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.calendarHeading a {
+  font-weight: normal;
+  font-size: 10pt;
+}
+.noresults {
+  font-style: italic;
+  font-size: 14pt;
+}
+.select2-results .schedule {
+  font-weight: bold;
+}
+.select2-results .resource {
+  padding-left: 15px;
+}
+.calendar-subscription {
+  text-align: right;
+  padding: 10px 0;
+}
+.unreservable.fc-event {
+  border: none;
+}
+.reservable.fc-event {
+  border: solid 1px #585754;
+  background-color: #F9F9F9;
+  color: #333 !important;
+}
+.group-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#day-dialog,
+#deleteCustomLayoutDialog,
+#confirmCreateSlotDialog {
+  display: none;
+  background-color: #F9F9F9;
+  border-color: #BCBCBC;
+  position: absolute;
+  z-index: 2;
+  padding: 12px;
+}
+#day-dialog a,
+#deleteCustomLayoutDialog a,
+#confirmCreateSlotDialog a {
+  padding: 0 5px;
+}
+#day-dialog .btn-link {
+  text-decoration: none;
+}
+.fc-daygrid-body .fc-day:hover {
+  background-color: aliceblue;
+}
+.fc-daygrid-body a,
+.fc-col-header-cell a {
+  text-decoration: none;
+  color: #353432;
+}
+#page-calendar #filter,
+#page-my-calendar #filter {
+  margin: 15px;
+  text-align: center;
+}
+#resource-groups-browser .btn {
+  padding: 0;
+  margin: 0;
+}
+.fc-dayGridMonth-view .fc-daygrid-event {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.fc-dayGridMonth-view .fc-daygrid-event .fc-event-title {
+  white-space: normal;
+  flex-basis: 100%;
+}

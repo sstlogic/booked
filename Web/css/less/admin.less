@@ -1,0 +1,956 @@
+@import "colors.less";
+
+span.error {
+  font-weight: bold;
+  color: #CE0000;
+}
+
+#changeLayoutDialog textarea {
+  width: 300px;
+  height: 375px;
+}
+
+#changeLayoutDialog p {
+  margin: 0;
+}
+
+.scheduleDetails .layout {
+  @media only screen and (max-width: 768px) {
+    border-top: solid 1px #f0f0f0;
+  }
+  @media only screen and (min-width: 768px) {
+    border-left: solid 1px #f0f0f0;
+  }
+}
+
+.actions {
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #f0f0f0;
+  background-color: #fcfcfc;
+  line-height: 20px;
+}
+
+.noImage {
+  line-height: 16px;
+  text-align: center;
+  color: #666;
+  font-size: 4em;
+
+  background-color: #f0f0f0;
+  border: solid 1px #ccc;
+}
+
+.resourceDetails {
+  //font-size: 1.2em;
+  padding: 3px;
+
+  img.image {
+    width: 100%;
+  }
+
+  .resourceImage {
+    text-align: center;
+  }
+
+  .resourceColorPicker {
+    height: 45px;
+    width: 75%;
+    border: solid 1px #000000;
+    padding: 0;
+  }
+}
+
+.admin-panel {
+  .title {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  a {
+    color: @link-color;
+  }
+
+  .propertyValue, .property-value {
+    font-weight: bold;
+  }
+
+  h4, h5 {
+    margin-bottom: 0;
+    color: #666666;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h5:not(:first-of-type) {
+    padding-top: 5px;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.add-link {
+  font-weight: bold;
+}
+
+.dialog ul, .dialog li {
+  font-size: 12px;
+  list-style: none;
+}
+
+.dialog li {
+  margin-bottom: 5px;
+}
+
+table.list {
+  border-collapse: collapse;
+}
+
+table.list, .list td, .list th {
+  border: solid 1px #716e71;
+}
+
+.list td, .list th {
+  padding: 4px;
+}
+
+.list th.id, .list td.id {
+  display: none;
+}
+
+#groupUserList {
+  overflow-y: auto;
+}
+
+.list tr.editable:hover {
+  cursor: pointer;
+  /*background-color: #FFFF99;*/
+  background-color: #c5e4f1;
+}
+
+.userList .customAttributes {
+
+  font-size: 9pt;
+  font-weight: normal;
+}
+
+tr.pending {
+  background-color: #ffb540;
+  background-color: #fffa5f;
+}
+
+#cboxClose {
+  display: none !important;
+}
+
+.wideLabel {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.attributeDialog .wideLabel {
+  min-width: 160px;
+  text-align: right;
+  padding-right: 4px;
+}
+
+.attributeDialog .textBoxOptions {
+  padding-bottom: 10px;
+}
+
+#blackoutTable {
+  width: 100%;
+}
+
+#staticSlots {
+  height: 400px;
+}
+
+#dailySlots, #tabs {
+  margin-bottom: 4px;
+}
+
+.allDailyLayouts {
+  display: none;
+}
+
+#addedGroups, #removedGroups {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: solid 1px #777777;
+}
+
+#addedGroups a, #removedGroups a {
+  width: 30px;
+  display: block;
+  float: left;;
+  text-decoration: none;
+}
+
+#addedGroups a {
+  background: url('../img/minus-gray.png') no-repeat;
+}
+
+#removedGroups a {
+  background: url('../img/plus-button.png') no-repeat;
+}
+
+#group-tree {
+  width: auto;
+  float: left;
+}
+
+#resource-list {
+  width: auto;
+  float: right;
+}
+
+#resource-list, #group-tree, #new-group {
+  font-size: 12pt;
+}
+
+.resource-draggable {
+  cursor: move;
+  border: solid 1px transparent;
+  padding: 3px;
+}
+
+.resource-draggable:hover {
+  border: dotted 1px #666;
+}
+
+.drop-resource {
+  background-color: #fffcd3;
+}
+
+ul.jqtree-tree .group-resource .jqtree-title {
+  color: #111111;
+}
+
+//
+//.remove-resource:after {
+//  display: inline;
+//  width: 16px;
+//  margin-left: 10px;
+//
+//}
+
+#resource-list h4 {
+  font-size: 13pt;
+  padding-left: 4px;
+}
+
+#manage-resource-groups-container {
+  max-width: 700px;
+}
+
+.title .help {
+  background: url(../img/question-button.png) no-repeat 50% 50%;
+  width: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+#customAttributeHeader {
+  font-size: 13pt;
+  margin-bottom: 10px;
+}
+
+.textBoxOptions div {
+  margin: 1px 0;
+}
+
+#entityChoices, #editEntityChoices {
+  display: none;
+  min-width: 150px;
+  border: solid 1px #e2e2e2;
+  padding: 10px;
+  max-height: 400px;
+  overflow-x: auto;
+  overflow-y: visible;
+  position: absolute;
+  z-index: 10000;
+  background-color: #f5f5f5;
+  -moz-box-shadow: 0px 0px 3px 0px #ccc;
+  -webkit-box-shadow: 0px 0px 3px 0px #ccc;
+  box-shadow: 0px 0px 3px 0px #ccc;
+}
+
+#entityChoices li, #editEntityChoices li {
+  list-style: none;
+  font-size: 10pt;
+}
+
+.ajax-indicator {
+  display: none;
+  background-image: url(../img/admin-ajax-indicator.gif);
+  width: 35px;
+  height: 35px;
+}
+
+//#repeatDiv {
+//  padding: 0;
+//
+//  div {
+//    padding: 2px 0;
+//  }
+//}
+
+#repeatOnWeeklyDiv label {
+  min-width: 30px;
+}
+
+#updateBlackout {
+  margin: 20px;
+}
+
+#updateBlackout ul {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.blackoutResources {
+  margin: 10px 0;
+}
+
+.blackouts-edit-resources {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.resourceItem {
+  display: block;
+}
+
+.admin-update-buttons {
+  margin-top: 5px;
+}
+
+#reservationColor {
+  width: 100px;
+}
+
+.user-color {
+  border: solid 1px #000;
+  display: inline-block;
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.reservationResourceStatusReason {
+  display: block;
+  font-weight: bold;
+}
+
+.config-settings li {
+  padding: 3px 0;
+}
+
+#reservationTable {
+  width: 100%;
+
+  .user, .title {
+    width: 110px;
+  }
+
+  .resource {
+    max-width: 150px;
+  }
+
+  .referenceNumber {
+    width: 1px;
+  }
+
+  .date {
+    width: 130px;
+  }
+
+  .duration {
+    max-width: 75px;
+  }
+
+  tr.editable td {
+    cursor: pointer;
+  }
+}
+
+.table .icon, #list-quotas-panel .icon {
+  font-size: 1.4em;
+}
+
+.inlineUpdate, .inline-update {
+  cursor: pointer;
+}
+
+span.inlineUpdate, span.inline-update {
+  border-bottom: 1px dashed #999;
+  text-decoration: none;
+}
+
+th.action, td.action {
+  max-width: 200px;
+  min-width: 100px;
+  width: 200px;
+  text-align: center;
+
+  .btn {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+th.action-delete, td.action-delete {
+  width: 22px;
+  text-align: center;
+}
+
+td.table-column-expand, th.table-column-expand {
+  width: 100%;
+}
+
+td.datetime-column {
+  min-width: 200px;
+}
+
+#adminFilterButtons {
+  padding-top: 5px;
+  margin-top: 15px;
+  clear: both;
+  border-top: solid 1px #cfcfcf;
+}
+
+label.label-top, .label-top label {
+  display: block;
+  clear: left;
+  font-size: .9em;
+}
+
+ul.resource-status-reasons li {
+  padding: 5px 5px;
+}
+
+ul.resource-status-reasons {
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.inlineUpdate:hover {
+  background-color: #fffaeb;
+}
+
+#bulkUpdateDialog .title {
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  background-color: #eee;
+  padding: 3px 3px;
+  margin: 7px 0;
+}
+
+#add-blackout-panel label {
+  min-width: 100px;
+}
+
+td.date {
+  width: 150px;
+}
+
+td.update {
+  text-align: center;
+  width: 65px;
+}
+
+#update-blackout-buttons {
+  padding-bottom: 5px;
+}
+
+.resourceStatusReason, .reasonId, .statusId {
+  width: 250px;
+}
+
+.descriptionValue {
+  max-width: 40%;
+}
+
+.days, .hours, .minutes, .credits {
+  width: 80px;
+}
+
+.popover {
+  max-width: 500px;
+}
+
+.quotaItem {
+  padding: 4px;
+}
+
+.slotTimezone {
+  margin: 5px 0;
+}
+
+.slotHelpText span {
+  font-family: Courier new, serif;
+}
+
+#groupSearchPanel {
+  margin-bottom: 15px;
+}
+
+#groupSearch {
+  width: 400px;
+}
+
+#announcementList {
+  .announcementText {
+
+  }
+
+  .announcementPriority {
+    width: 100px;
+  }
+
+  .announcementStart, .announcementEnd {
+    width: 150px;
+  }
+}
+
+.appliesToId {
+  display: none;
+}
+
+.add-quota-line {
+  padding: 10px 0;
+}
+
+//
+//#enforce-hours-times {
+//  padding-left: 10px;
+//
+//  span {
+//    margin-top: 10px;
+//  }
+//}
+
+#resource-images {
+  .resource-image {
+    //width:33.3%;
+    //display:inline;
+
+    img {
+      width: 100%
+    }
+  }
+}
+
+#sendStatusChangeMessageContent {
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  padding: 1em;
+  .rounded();
+}
+
+.resource-details-column > div {
+  margin-top: 1rem;
+}
+
+/// page level overrides
+
+#page-manage-resource-groups {
+  #groupName {
+    width: 80%;
+  }
+}
+
+#page-manage-groups {
+  .groupNamePlaceholder {
+    font-weight: 700;
+    margin-bottom: 1em;
+    display: inline-block;
+  }
+}
+
+#page-manage-payments {
+  .tab-content {
+    padding-top: 15px;
+  }
+}
+
+#page-manage-schedules {
+  .appointment-quick-add {
+    flex-wrap: wrap;
+  }
+
+  #appointment-quick-add-error {
+    flex-basis: 100%;
+  }
+}
+
+.admin-page-header {
+  border-bottom: solid 1px @mid-gray;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.admin-page-header-actions {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    margin-left: 1rem;
+    align-self: center;
+  }
+
+  button {
+
+  }
+}
+
+.admin-action-button, .admin-action-button:visited, a.admin-action-button, a.admin-action-button:visited {
+  background-color: #64b5f6;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1.5rem;
+  //box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.admin-action-button:hover {
+  color: #fff;
+  background-color: darken(#64b5f6, 10%);
+}
+
+.search-date, .search-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+//***** BUTTON ICON FIX *****//
+//.admin-page {
+//  .bi {
+//    vertical-align: 0.125em;
+//    margin-bottom: calc(-0.125em / 2);
+//  }
+//}
+
+// Make icons slightly larger (aesthetically) in input group prepend/append
+.input-group {
+  .input-group-text {
+    .bi {
+      transform: scale(1.5);
+    }
+  }
+}
+
+// Make icons slightly larger (aesthetically) in buttons and dropdowns
+.btn,
+.dropdown {
+  .bi {
+    transform: scale(1.5);
+    // reset the bottom margin from above
+    margin-bottom: 0;
+  }
+}
+
+//***** BUTTON ICON FIX *****//
+
+@media (max-width: 768px) {
+  btn-icon
+  .admin-action-button {
+    padding: .5rem 1rem;
+  }
+}
+
+.alert-badge {
+  position: relative;
+}
+
+.alert-badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: .7em;
+  background: green;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #333;
+}
+
+
+.btn-icon {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.btn-icon:hover {
+  background-color: aliceblue;
+}
+
+.drop-import-file {
+  background-color: #ebebeb;
+  border: dashed 1px #888;
+  color: #888;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.import-parsed-successfully {
+  margin: 1rem;
+}
+
+.inline-update-edit {
+  display: inline-block;
+}
+
+.admin-page {
+
+  input[type="color"] {
+    width: 50px;
+    height: 38px;
+  }
+
+  label.customAttribute.readonly {
+    display: inline-block;
+  }
+}
+
+#page-data-cleanup {
+  .cleanup-section {
+    margin-bottom: 2rem;
+  }
+
+  .cleanup-section-title {
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: @light-gray;
+    margin-bottom: .5rem;
+  }
+}
+
+#page-manage-configuration {
+  .config-section {
+    margin-bottom: 1rem;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .settings-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    min-height: 50px;
+    padding: 15px 0;
+    background-color: #fff;
+    border-bottom: solid 1px @dark-gray;
+  }
+
+  //.setting-section {
+  //  margin-top: -140px;
+  //  padding-top: 140px;
+  //  z-index: -1;
+  //}
+
+  .form-label {
+    font-size: 1.2rem;
+  }
+}
+
+#monitor-views-table {
+  tbody td {
+    .btn-link {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.admin-results-none {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#page-manage-monitor-views {
+  .monitor-view-resource-options {
+    label {
+      margin-right: .75rem;
+      cursor: pointer;
+      border-bottom: solid 2px transparent;
+      margin-bottom: 3px;
+      padding-bottom: 2px;
+    }
+
+    label.active {
+      border-bottom: solid 2px @mid-gray;
+    }
+  }
+}
+
+#page-manage-reservations-settings {
+  .form-label {
+    font-weight: 600;
+  }
+}
+
+#page-manage-resource-maps {
+  #map {
+    height: 90vh;
+  }
+}
+
+// sidebar
+.admin-container {
+  width: 100%;
+  margin: -.5rem auto 0 -10px;
+  display: flex;
+  transition: 1s ease;
+}
+
+.admin-sidebar {
+  display:none;
+  // temporary
+
+  min-width: 180px;
+  max-width: 180px;
+  background-color: #54a;
+  transition: 1s ease;
+  position: relative;
+  margin-left: -2px;
+  margin-top: -6px;
+  padding-top: 42px;
+  //height: calc(100vh);
+
+  .bi-chevron-double-left {
+    display: inline;
+  }
+
+  .bi-chevron-double-right {
+    display: none;
+  }
+
+  button {
+    position: absolute;
+    border: none;
+    height: 30px;
+    width: 30px;
+    //border-radius: 50%;
+    border-radius: 22%;
+    left: 100%;
+    top: .25rem;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .3);
+    transform: translateX(-60%);
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-size: 1.1em;
+  }
+
+  button:hover {
+    background: #eee;
+  }
+
+  a {
+    color: #b5b5be;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    border-left: solid 2px transparent;
+    padding: 2px 2px 2px 6px;
+
+    &:hover {
+      color: #fafafb;
+      text-decoration: none;
+      transition: .5s ease;
+      border-left: solid 2px #fff;
+      margin-left: 4px;
+    }
+
+    margin-bottom: .5em;
+  }
+
+  a.admin-sidebar-selected {
+    background-color: #7967d2;
+    color: #fafafb;
+  }
+
+  .admin-nav-divider {
+    color: #b5b5be;
+    height: 1px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+}
+
+.admin-sidebar.collapsed {
+  min-width: 44px;
+  max-width: 44px;
+
+  .admin-nav-link-text {
+    display: none;
+  }
+
+  a {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .bi-chevron-double-left {
+    display: none;
+  }
+
+  .bi-chevron-double-right {
+    display: inline;
+  }
+}
+
+.admin-content {
+  height: 100%;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+
+  padding-left: .5rem;
+  // temporary
+}
+
+
+// sidebar
+
+@import "manage-resources";
+@import "manage-schedules";
+@import "manage-reservations";
+@import "manage-users";
+@import "manage-groups";
+@import "manage-attributes";
+@import "manage-quotas";

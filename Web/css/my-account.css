@@ -1,0 +1,43 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+.page-notification-preferences .phone-confirmation-div .phone-label {
+  font-size: 0.9em;
+  color: #585754;
+  text-transform: uppercase;
+}
+.page-notification-preferences .phone-confirmation-div .phone-number {
+  font-size: 1.3em;
+}
+.page-notification-preferences .notification-row {
+  border-top: solid 1px #E9E9E9;
+  padding: 1rem 0;
+}
+.page-notification-preferences .notification-row .notification-type-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.25rem;
+}
+.page-notification-preferences .notification-row .notification-row-description {
+  color: #585754;
+}
+.page-profile #timezone-warning {
+  display: none;
+  color: #AA3939;
+  font-size: 0.8rem;
+}
+.page-profile .profile-created-message {
+  margin-bottom: 0.5em;
+  font-style: italic;
+  color: #585754;
+}

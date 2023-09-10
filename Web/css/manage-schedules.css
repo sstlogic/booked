@@ -1,0 +1,43 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-manage-schedules .appointment-quick-add {
+  margin-bottom: 0.5rem;
+  background-color: #E9E9E9;
+  border: solid 1px #BCBCBC;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#page-manage-schedules .schedule-name {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #353432;
+}
+#page-manage-schedules .slotWizard {
+  display: flex;
+  align-items: center;
+  border: solid 1px #E9E9E9;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#page-manage-schedules .slotHelpText {
+  background-color: lightyellow;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+}
+#page-manage-schedules #quickLayoutConfig {
+  width: 80px;
+}
+#page-manage-schedules #quickLayoutStart,
+#page-manage-schedules #quickLayoutEnd {
+  width: 120px;
+}
+#page-manage-schedules #peakBeginDay,
+#page-manage-schedules #peakEndDay {
+  width: 75px;
+}

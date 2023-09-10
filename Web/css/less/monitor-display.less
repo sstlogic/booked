@@ -1,0 +1,168 @@
+@import "elements.less";
+@import "colors.less";
+
+#monitor-display-configuration {
+  background-color: @lightest-gray;
+  border-bottom: solid 1px @light-gray;
+  padding-bottom: 1px;
+}
+
+#page-monitor-display {
+  height: calc(100vh - 20px);
+
+  #main {
+    padding: 0;
+    margin: 0;
+  }
+
+  #monitor-display-placeholder, #monitor-display-contents {
+    height: 100%;
+
+    #reservations {
+      width: 100%;
+    }
+  }
+
+  .monitor-display-logo-container img {
+    max-height: 50px;
+  }
+
+  div.reserved {
+    .rounded();
+    margin-bottom: 3px;
+    padding: 2px;
+  }
+
+  table.reservations td.resourcename a {
+    color: #000;
+  }
+
+  table.reservations {
+    thead td {
+      top: 0;
+    }
+  }
+
+  .monitor-display-header {
+    background-color: #f8f8f8;
+    border-bottom: solid 1px #e7e7e7;
+    margin-bottom: 10px;
+    //margin-left: -15px;
+    //margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    content: none;
+  }
+
+  .monitor-display-announcement, .monitor-view-no-reservations {
+    //height: calc(80vh);
+    font-size: 10vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .monitor-display-resource-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: @dark-gray;
+  }
+
+  .monitor-display-datetime-container, .monitor-display-logo-container {
+    flex: 1;
+  }
+
+  .monitor-display-datetime-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .monitor-display-datetime {
+    color: @dark-gray;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+  }
+
+  .monitor-display-title {
+    font-size: 5rem;
+    text-align: center;
+    flex: 1 1 auto;
+    color: @dark-gray;
+  }
+
+  .monitor-display-time {
+    font-size: 3rem;
+  }
+
+  .monitor-display-date {
+    font-size: 2rem;
+  }
+
+  .monitor-view-events {
+    margin-left: 5%;
+    padding-left: 3rem;
+    border-left: solid 3px #CCCCCC;
+    //height: calc(80vh);
+    height: calc(100vh - 160px);
+  }
+
+  .monitor-view-event {
+    margin-bottom: 3rem;
+    color: @dark-gray;
+    font-size: 3.5vh;
+  }
+
+  .monitor-view-event-title {
+    font-weight: 600;
+    font-size: 5vh;
+    color: #2b669a;
+  }
+
+  .monitor-view-event-owner {
+    font-weight: 600;
+  }
+
+  .monitor-view-event-datetime {
+    color: lighten(@dark-gray, 10%);
+  }
+
+  .monitor-view-event-resource {
+  }
+
+  #monitor-display-calendar-table {
+    width: 98%;
+    table-layout: fixed;
+    margin-left: 1%;
+
+    border: solid 1px #000;
+
+    th {
+      width: 14.28571428571429%;
+      text-align: center;
+      border: solid 1px #000;
+      background-color: @light-gray;
+    }
+
+    td {
+      border: solid 1px #000;
+    }
+
+    .monitor-view-event {
+      font-size: 1em;
+      margin-bottom: 1rem;
+    }
+
+    .monitor-display-calendar-table-events td {
+      padding: 3px;
+      vertical-align: top;
+      .monitor-view-event-title {
+        font-size: 1rem;
+      }
+    }
+  }
+}

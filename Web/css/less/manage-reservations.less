@@ -1,0 +1,98 @@
+@import "colors";
+
+#page-manage-reservations {
+  .resource {
+    .online {
+      color: green;
+    }
+
+    .offline {
+      color: red;
+    }
+
+    .hidden {
+      color: @dark-gray;
+    }
+  }
+
+  #reservation-list {
+    span.label, label.customAttribute {
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .reservation-update-row {
+      min-width: 130px;
+      max-width: 130px;
+
+      button, a {
+        width: 100%;
+        margin-bottom: .5rem;
+        display: inline-block;
+      }
+    }
+  }
+
+  .reservation-sort-row {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: solid 1px @mid-gray;
+    align-items: end;
+
+    label {
+      font-size: .8rem;
+    }
+  }
+
+}
+
+#page-manage-reservation-colors {
+  .manage-color-rules-attribute-value {
+    .form-label {
+      display: none;
+    }
+  }
+
+  .manage-color-rules-section {
+    border: solid 1px @mid-gray;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: .25em;
+
+    .manage-color-rules-section-title {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 4px;
+    }
+  }
+
+  .manage-color-rules-list-color-col {
+    width: 250px;
+  }
+
+  .manage-color-rules-list-priority-col {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #page-manage-reservations {
+    #reservation-list {
+      .reservation-update-row {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      button, a {
+        margin-bottom: auto;
+      }
+    }
+  }
+}
+
+

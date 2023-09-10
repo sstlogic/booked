@@ -1,0 +1,48 @@
+@media print {
+  * {
+    display:block;
+  }
+  script, style {
+    display:none;
+  }
+
+  #page-reservation {
+    .reservation-content {
+      height: 100%;
+      overflow-y: visible;
+      break-inside: avoid;
+    }
+
+    .reservation-top-bar {
+      display: none;
+    }
+
+    .reservation-section, .reservation-content-section {
+      display: table;
+      width:100%;
+      overflow-y: visible;
+    }
+
+    .reservation-icon-section {
+      display: none;
+    }
+
+    #reservation-details-section {
+      overflow-y: visible;
+      display: table;
+
+      .col-12, .col-lg-6, .col-xl-4 {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Copyright 2013-2023 Twinkle Toes Software, LLC
+ */
+
+interface ICalendarSubscriptionPage
+{
+    /**
+     * @return string
+     */
+    public function GetSubscriptionKey();
+
+    /**
+     * @return string
+     */
+    public function GetUserId();
+
+    /**
+     * @param iCalendarReservationView[] $reservations
+     */
+    public function SetReservations($reservations);
+
+    /**
+     * @return string
+     */
+    public function GetScheduleId();
+
+    /**
+     * @return string
+     */
+    public function GetResourceId();
+
+    /**
+     * @return string
+     */
+    public function GetResourceGroupId();
+
+    /**
+     * @return int
+     */
+    public function GetAccessoryIds();
+
+    /**
+     * @return int
+     */
+    public function GetPastNumberOfDays();
+
+    /**
+     * @return int
+     */
+    public function GetFutureNumberOfDays();
+
+}

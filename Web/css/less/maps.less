@@ -1,0 +1,51 @@
+.leaflet-pane {
+  z-index: 99;
+}
+
+#page-view-maps {
+  .timepicker-list {
+    z-index: 100;
+  }
+
+  .reservation-date-picker {
+    width: 120px;
+  }
+
+  #map {
+    height: 90vh;
+  }
+
+  #resource-maps-search-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+    .resource-maps-search-filter-map {
+      flex: 1 0 auto;
+      max-width: 25%;
+    }
+
+    .resource-maps-search-filter-resources {
+      //flex-grow:1;
+      flex: 1 0 auto;
+    }
+  }
+
+  .view-map-resource-popup {
+    .view-map-resource-popup-name {
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+
+    .view-map-resource-popup-status {
+      .status-circle {
+        border-radius: 10px;
+        height: 10px;
+        width: 10px;
+        display: inline-block;
+        margin-right: 4px;
+        background-color: green;
+      }
+    }
+  }
+}

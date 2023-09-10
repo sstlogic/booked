@@ -1,0 +1,147 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#monitor-display-configuration {
+  background-color: #F9F9F9;
+  border-bottom: solid 1px #E9E9E9;
+  padding-bottom: 1px;
+}
+#page-monitor-display {
+  height: calc(100vh - 20px);
+}
+#page-monitor-display #main {
+  padding: 0;
+  margin: 0;
+}
+#page-monitor-display #monitor-display-placeholder,
+#page-monitor-display #monitor-display-contents {
+  height: 100%;
+}
+#page-monitor-display #monitor-display-placeholder #reservations,
+#page-monitor-display #monitor-display-contents #reservations {
+  width: 100%;
+}
+#page-monitor-display .monitor-display-logo-container img {
+  max-height: 50px;
+}
+#page-monitor-display div.reserved {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 3px;
+  padding: 2px;
+}
+#page-monitor-display table.reservations td.resourcename a {
+  color: #000;
+}
+#page-monitor-display table.reservations thead td {
+  top: 0;
+}
+#page-monitor-display .monitor-display-header {
+  background-color: #f8f8f8;
+  border-bottom: solid 1px #e7e7e7;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  content: none;
+}
+#page-monitor-display .monitor-display-announcement,
+#page-monitor-display .monitor-view-no-reservations {
+  font-size: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page-monitor-display .monitor-display-resource-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #585754;
+}
+#page-monitor-display .monitor-display-datetime-container,
+#page-monitor-display .monitor-display-logo-container {
+  flex: 1;
+}
+#page-monitor-display .monitor-display-datetime-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#page-monitor-display .monitor-display-datetime {
+  color: #585754;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+}
+#page-monitor-display .monitor-display-title {
+  font-size: 5rem;
+  text-align: center;
+  flex: 1 1 auto;
+  color: #585754;
+}
+#page-monitor-display .monitor-display-time {
+  font-size: 3rem;
+}
+#page-monitor-display .monitor-display-date {
+  font-size: 2rem;
+}
+#page-monitor-display .monitor-view-events {
+  margin-left: 5%;
+  padding-left: 3rem;
+  border-left: solid 3px #CCCCCC;
+  height: calc(100vh - 160px);
+}
+#page-monitor-display .monitor-view-event {
+  margin-bottom: 3rem;
+  color: #585754;
+  font-size: 3.5vh;
+}
+#page-monitor-display .monitor-view-event-title {
+  font-weight: 600;
+  font-size: 5vh;
+  color: #2b669a;
+}
+#page-monitor-display .monitor-view-event-owner {
+  font-weight: 600;
+}
+#page-monitor-display .monitor-view-event-datetime {
+  color: #72716d;
+}
+#page-monitor-display #monitor-display-calendar-table {
+  width: 98%;
+  table-layout: fixed;
+  margin-left: 1%;
+  border: solid 1px #000;
+}
+#page-monitor-display #monitor-display-calendar-table th {
+  width: 14.28571429%;
+  text-align: center;
+  border: solid 1px #000;
+  background-color: #E9E9E9;
+}
+#page-monitor-display #monitor-display-calendar-table td {
+  border: solid 1px #000;
+}
+#page-monitor-display #monitor-display-calendar-table .monitor-view-event {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+#page-monitor-display #monitor-display-calendar-table .monitor-display-calendar-table-events td {
+  padding: 3px;
+  vertical-align: top;
+}
+#page-monitor-display #monitor-display-calendar-table .monitor-display-calendar-table-events td .monitor-view-event-title {
+  font-size: 1rem;
+}

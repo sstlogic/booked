@@ -1,0 +1,43 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+.recurrence .recurrence-label {
+  min-width: 100px;
+}
+.recurrence .recurrence-row {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+.recurrence .repeat-date-list {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.recurrence .repeat-date-list .repeat-date-item {
+  margin-right: 1rem;
+  align-items: center;
+  display: flex;
+}
+.recurrence .repeat-date-list .repeat-date-item .btn,
+.recurrence .repeat-date-list .repeat-date-item .btn-link {
+  margin: 0;
+  padding: 0;
+  color: #AA3939;
+  font-weight: 600;
+}
+.recurrence .repeat-date-list .repeat-date-item .bi {
+  font-size: 1.5rem;
+}
+.recurrence select {
+  width: auto;
+}
+.recur-toggle .form-check-inline {
+  margin: 0;
+  padding-left: 0;
+}

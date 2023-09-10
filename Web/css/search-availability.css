@@ -1,0 +1,71 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.page-search-availability .opening {
+  float: left;
+  margin: 5px 10px;
+  border: solid 1px #4c4854;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 30%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 1px #99988e;
+  -moz-box-shadow: 0px 0px 5px 1px #99988e;
+  box-shadow: 0px 0px 5px 1px #99988e;
+}
+.page-search-availability .opening .resourceName {
+  background-color: #cfe4dd;
+  padding: 1px 3px;
+  color: #428181;
+}
+.page-search-availability .opening .dates {
+  padding: 2px;
+}
+@media (max-width: 991px) {
+  .page-search-availability .opening {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .page-search-availability .opening {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.page-search-availability .input-group {
+  width: auto;
+}
+@media (min-width: 576px) {
+  .page-search-availability #search-row select {
+    width: auto;
+  }
+}
+.page-search-availability span.hours-minutes {
+  min-width: 120px;
+}
+.page-search-availability #repeatDiv label {
+  min-width: 50px;
+}
+.page-search-availability #repeatDiv .react-datepicker-wrapper {
+  padding-left: 4px;
+}
+.page-search-availability #repeatDiv .form-group > div {
+  margin-bottom: 2px;
+}
+.search-date-options .form-check-inline {
+  margin: 0;
+}
+.search-date-options .form-check {
+  padding: 0;
+}

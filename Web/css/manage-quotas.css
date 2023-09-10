@@ -1,0 +1,23 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-manage-quotas .manage-quotas-list {
+  width: 100%;
+}
+#page-manage-quotas .manage-quotas-list-item:nth-child(even) {
+  background-color: #f3f3f3;
+}
+#page-manage-quotas .manage-quotas-list-item {
+  border-top: solid 1px #BCBCBC;
+  padding: 1em 0;
+}
+#page-manage-quotas .manage-quotas-list-item:last-of-type {
+  border-bottom: solid 1px #BCBCBC;
+}
+#page-manage-quotas .manage-quotas-list-item-label {
+  font-weight: 600;
+}

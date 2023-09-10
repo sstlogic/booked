@@ -1,0 +1,26 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-manage-oauth-providers .manage-provider-section-title {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#page-manage-oauth-providers .manage-provider-all-required {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #585754;
+  text-transform: capitalize;
+}
+#page-manage-oauth-providers .manage-oauth-providers-redirect-url {
+  margin-bottom: 0.5rem;
+  border: solid 1px #BCBCBC;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: #F9F9F9;
+}

@@ -1,0 +1,69 @@
+Reserverings Details:
+<br/>
+<br/>
+
+Start: {$StartDate->Format($dateFormat)}<br/>
+Einde: {$EndDate->Format($dateFormat)}<br/>
+{if count($ResourceNames) > 1}
+    Bronnen:
+    <br/>
+    {foreach from=$ResourceNames item=resourceName}
+        {$resourceName}
+        <br/>
+    {/foreach}
+{else}
+    Bron: {$ResourceName}
+    <br/>
+{/if}
+
+{if $ResourceImage}
+    <div class="resource-image"><img src="{$ScriptUrl}/{$ResourceImage}"/></div>
+{/if}
+
+Titel: {$Title}<br/>
+Beschrijving: {nl2br($Description)}<br/>
+
+{if count($RepeatDates) gt 0}
+    <br/>
+    De reservering zal zijn op de volgende data:
+    <br/>
+{/if}
+
+{foreach from=$RepeatDates item=date name=dates}
+    {$date->Format($dateFormat)}
+    <br/>
+{/foreach}
+
+{if count($Accessories) > 0}
+    <br/>
+    Benodigdheden:
+    <br/>
+    {foreach from=$Accessories item=accessory}
+        ({$accessory->QuantityReserved}) {$accessory->Name}
+        <br/>
+    {/foreach}
+{/if}
+
+{if count($Attributes) > 0}
+    <br/>
+    {foreach from=$Attributes item=attribute}
+        <div>{control type="AttributeControl" attribute=$attribute readonly=true}</div>
+    {/foreach}
+{/if}
+
+{if $RequiresApproval}
+    <br/>
+    Eén of meerdere bronnen die gereserveerd zijn hebben goedkeuring nodig voor gebruik. Deze reservering wordt in behandeling genomen totdat hij is goedgekeurd.
+{/if}
+
+{if !empty($ApprovedBy)}
+    <br/>
+    Geaccepteerd door: {$ApprovedBy}
+{/if}
+
+<br/>
+<br/>
+<a href="{$ScriptUrl}/{$ReservationUrl}">Bekijk deze reservering</a> |
+<a href="{$ScriptUrl}/{$ICalUrl}">Voeg toe aan agenda</a> |
+<a href="{$ScriptUrl}">Inloggen Booked Scheduler</a>
+

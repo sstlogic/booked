@@ -1,0 +1,83 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+.manage-attributes-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.manage-attributes-navigation {
+  width: 250px;
+  background-color: #F9F9F9;
+  border: solid 1px #BCBCBC;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-right: 1em;
+}
+.manage-attributes-navigation .manage-attributes-navigation-title {
+  font-weight: 300;
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+}
+.manage-attributes-navigation .manage-attributes-navigation-item {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  margin: 5px 0;
+}
+.manage-attributes-navigation .manage-attributes-navigation-item:hover {
+  background-color: #E9E9E9;
+}
+.manage-attributes-navigation .manage-attributes-navigation-item.selected {
+  font-weight: 700;
+  background-color: #E9E9E9;
+}
+.manage-attributes-list {
+  width: 100%;
+}
+.manage-attributes-list .manage-attributes-item {
+  border-top: solid 1px #BCBCBC;
+  padding: 1em 0.5em;
+}
+.manage-attributes-list .manage-attributes-item .manage-attributes-item-header {
+  display: flex;
+}
+.manage-attributes-list .manage-attributes-item .manage-attributes-name {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #353432;
+  flex-grow: 1;
+}
+.manage-attributes-list .manage-attributes-item .manage-attributes-item-label {
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 5px;
+}
+.manage-attributes-list .manage-attributes-item .manage-attributes-item-value {
+  display: inline-block;
+}
+.manage-attributes-list .manage-attributes-item:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+.manage-attributes-list .manage-attributes-item:first-of-type {
+  margin-top: 0;
+  border-top: none;
+}
+.manage-attributes-list .manage-attributes-item:last-of-type {
+  border-bottom: solid 1px #BCBCBC;
+  padding-bottom: 1em;
+}
+.add-update-attribute-container .attribute-edit-readonly-value {
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.add-update-attribute-container .copied-success {
+  font-size: 1rem;
+}

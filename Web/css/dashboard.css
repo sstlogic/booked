@@ -1,0 +1,155 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-dashboard .panel-heading {
+  background-color: #9BC2C2;
+  color: #fff;
+}
+#page-dashboard .panel-heading,
+#page-dashboard .panel {
+  border-color: #8bb8b8;
+}
+.dashboard {
+  margin-top: 15px;
+  background-color: #fcfcfc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 5px 1px #99988e;
+  -moz-box-shadow: 0px 0px 5px 1px #99988e;
+  box-shadow: 0px 0px 5px 1px #99988e;
+}
+#dashboardList .dashboard:first-child {
+  margin-top: 0;
+}
+.dashboard-contents {
+  padding: 15px;
+  border: 1px solid #4c4854;
+}
+.dashboard-header {
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #58545d;
+}
+.dashboard-header .badge {
+  background-color: #736a81;
+}
+.dashboard-header .btn-link {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.dashboard-header .btn.btn-link:hover {
+  color: #fff;
+}
+.dashboard-header a,
+.dashboard-header a:hover,
+.dashboard-header a:visited,
+.dashboard-header a:active {
+  color: #fff;
+}
+.dashboard .noresults {
+  text-align: center;
+  font-style: italic;
+}
+.dashboard-contents a {
+  color: #3D72A4;
+  padding: 5px;
+}
+.dashboard-contents .table {
+  margin-bottom: 1px;
+}
+.upcoming-reservations-dashboard .timespan {
+  padding: 3px;
+  font-style: italic;
+  color: #777;
+  border-bottom: 1px solid #E9E9E9;
+}
+.upcoming-reservations-dashboard .reservation {
+  padding: 3px 0;
+  border-bottom: 1px solid #E9E9E9;
+  margin: 0 3px;
+}
+.upcoming-reservations-dashboard .reservation.hover {
+  cursor: pointer;
+  background-color: #eaf2f2;
+  color: #222;
+}
+.upcoming-reservations-dashboard .reservation.clicked {
+  cursor: pointer;
+  background-color: #F0F0F0;
+}
+.upcoming-reservations-dashboard .reservation.pending {
+  background-color: #ffb540;
+}
+.upcoming-reservations-dashboard .reservation.pending.hover,
+.upcoming-reservations-dashboard .reservation.pending.clicked {
+  background-color: #ffc973;
+}
+.availabilityDashboard .header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.availabilityDashboard .resourceName {
+  text-overflow: ellipsis;
+  color: #428181;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2px;
+  display: inline-block;
+  margin-right: 2px;
+  background-color: #cfe4dd;
+}
+.availabilityDashboard .resourceName a {
+  color: #000000;
+}
+.availabilityDashboard .resourceName .fa:last-of-type {
+  margin-right: 2px;
+}
+.availabilityDashboard .availability {
+  font-style: italic;
+  color: #585754;
+}
+.availabilityDashboard .reserve-button {
+  text-align: right;
+}
+.availabilityDashboard .availability-item {
+  padding: 5px 0;
+}
+.availabilityDashboard .availability-item .btn {
+  background-color: #58AC58;
+  color: #fff;
+  border-color: #458c45;
+  padding: 1px 20px;
+}
+.availabilityDashboard .availability-item .btn:hover {
+  background-color: #4e9d4e;
+  border-color: #3d7b3d;
+}
+.availabilityDashboard h5 {
+  margin: 0;
+  font-weight: bold;
+  color: #BCBCBC;
+}
+.dashboard-resource-names {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.dashboard-waitlist-count {
+  display: inline-block;
+  background-color: #8bb8b8;
+  color: #fff;
+}

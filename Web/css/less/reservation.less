@@ -1,0 +1,768 @@
+@import "elements.less";
+@import "colors.less";
+
+#additionalResources {
+  display: inline;
+}
+
+#additionalResources p {
+  margin: 0px;
+  font-style: italic;
+}
+
+.durationText {
+  font-size: .9em;
+  font-weight: bold;
+  display: inline;
+  color: #000;
+}
+
+#reservationbox {
+  width: 100%;
+  margin: 3em auto 1em;
+}
+
+#reservationbox ul {
+  list-style: none;
+}
+
+#reservationbox input[type="file"] {
+  font-size: 10pt;
+}
+
+#reservationbox .input {
+  font-size: 16px;
+  width: 98%;
+  padding: 3px;
+  margin: 2px 0 5px 0;
+  border: 1px solid #e5e5e5;
+  background: #fbfbfb;
+  color: #777;
+}
+
+#reservationbox.readonly label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+#reservationbox.readonly ul {
+  font-size: 16px;
+  color: #333;
+}
+
+#reservationbox.readonly .section {
+  padding-top: 15px;
+}
+
+#reservationbox.readonly .repeat-details, #reservationbox.readonly .repeat-details label {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+#reservationDetails {
+  padding-right: 25px;
+
+  #userName {
+    font-size: 1.2em;
+  }
+}
+
+.reservationButtons {
+  margin-top: 20px;
+}
+
+.reservationReminders, .reservationAttachments, .customAttributes {
+  margin-top: -9px;
+  padding-top: 0px;
+}
+
+.reservationDeleteButtons {
+  float: left;
+}
+
+.reservationSubmitButtons {
+  float: right;
+}
+
+#reservationParticipation {
+  padding-left: 25px;
+  //   border-left: solid 1px @mid-gray;
+}
+
+#participantList, #inviteeList {
+  height: 100px;
+  width: 98%;
+  overflow-y: auto;
+  border: solid 1px @light-gray;
+  padding: 2px;
+  .rounded(2px);
+  margin: 2px 0 5px 0;
+  background-color: #fff;
+
+  .user {
+    float: left;
+    padding-right: 5px;
+  }
+}
+
+#accessories {
+  max-height: 200px;
+  overflow: auto;
+}
+
+#accessories p {
+  margin: 1px;
+}
+
+#reservationbox a {
+  font-size: 12pt;
+}
+
+#dialogSave ul {
+  text-align: left;
+}
+
+#dialogSave .error {
+  background-image: none;
+}
+
+#dialogSave h2 {
+  font-size: 18pt;
+}
+
+#dialogSave div {
+  font-size: 16pt;
+  text-align: center;
+}
+
+#dialogSave input, #dialogSave button {
+  font-size: 11pt;
+}
+
+.res-attachments {
+
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #dedede;
+}
+
+.res-attachments .heading {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+#reservationbox .res-attachments a {
+  font-size: 9pt;
+}
+
+#reminderOptionsStart, #reminderOptionsEnd {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.reminderLabel {
+  font-size: 10pt;
+}
+
+#reservationbox a.small-action {
+  font-size: 9pt;
+  color: #3d5b74;
+}
+
+.customAttributes {
+  margin-top: 10px;
+}
+
+ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree .jqtree-toggler {
+  top: 10%;
+}
+
+ul.jqtree-tree .group-resource .jqtree-title {
+  color: #111111;
+}
+
+.buttonsTop {
+  margin-bottom: 10px;
+}
+
+.reservationDate {
+  width: 50px;
+  display: inline-block;
+}
+
+.reservationDates, .reservationTitle, .reservationResources {
+  padding-top: 12px;
+}
+
+.reservationLength .form-group {
+  margin: 5px 0;
+}
+
+#reservationCreated .approvalMessage, #reservationUpdated .approvalMessage {
+  margin: 15px 0;
+  font-size: smaller;
+}
+
+#changeUsers {
+  display: none;
+}
+
+.reservationHeader h3 {
+  margin: 0;
+
+  .pendingApproval {
+    color: #ffb540;
+  }
+}
+
+.repeat-drop {
+  width: auto;
+}
+
+.repeat-interval-drop {
+  width: auto;
+}
+
+.weeks, .months {
+  margin-top: 5px;
+}
+
+.weeks .btn-sm {
+  width: 55px;
+}
+
+#reservation-box label {
+  min-width: 50px;
+}
+
+.accessory-quantity {
+  width: 60px;
+}
+
+.reminder-time {
+  width: 75px;
+}
+
+.reminderInterval {
+  width: auto;
+  padding: 0px;
+}
+
+a.add {
+  color: @almost-black;
+  text-decoration: none;
+}
+
+a.add .icon {
+  color: @primary-green;
+}
+
+a.remove {
+  color: @muted-red;
+}
+
+#reservation-response-image .error {
+  color: @muted-red;
+}
+
+#reservation-response-image .warning {
+  color: @dark-orange;
+}
+
+#reservation-response-image .success {
+  color: @primary-green;
+}
+
+.reservation-message {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.accessoriesDiv {
+  float: right;
+}
+
+.participationText, .participationButtons {
+  display: inline;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .reservation-message {
+
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .btnCreate, .btnEdit {
+    width: 70%;
+    float: right;
+  }
+
+  .accessoriesDiv {
+    padding-top: 10px;
+    float: none;
+    clear: both;
+  }
+
+  .participationText, .participationButtons {
+    width: 100%;
+    display: block;
+
+    input[type=text].user-search {
+      width: 100%;
+    }
+  }
+
+  .participationButtons {
+    padding: 3px 0;
+
+    button {
+      //height:30px;
+      line-height: 15px;
+    }
+  }
+
+  #reservationDetails {
+    padding-right: 0;
+  }
+
+  #reservationParticipation {
+    padding-right: 15px;
+  }
+
+}
+
+@media only screen and (min-device-width: 480px) {
+  .detailsBorder {
+    border-right: solid 1px @blue-gray;
+  }
+}
+
+#custom-attributes-placeholder .form-group {
+  margin: 0;
+}
+
+//#custom-attributes-placeholder .customAttribute {
+//  max-width: 250px;
+//  //display:inline-block;
+//  float:left;
+//  //padding-bottom: 500em;
+//  //margin-bottom: -500em;
+//}
+
+#allowParticipation {
+  margin-top: 5px;
+}
+
+#invite-error {
+  font-weight: bold;
+  color: @muted-red;
+}
+
+#reservation-box {
+  .resourceName {
+    color: @color-secondary-2-3;
+
+    a {
+      color: @color-secondary-2-3;
+    }
+
+    .rounded(2px);
+    padding: 2px 1px;
+    display: inline-block;
+    margin-right: 2px;
+
+    .fa:last-of-type {
+      margin-right: 2px;
+    }
+
+    background-color: @color-secondary-2-1;
+  }
+}
+
+.autoReleaseButtonMessage {
+  display: none;
+}
+
+.unavailable-resource {
+  text-decoration: line-through;
+  color: @muted-red;
+}
+
+#availableCreditsCount, #requiredCreditsCount, #creditCost {
+  font-weight: bold;
+}
+
+#requiredCreditsCount.insufficient-credits, #creditCost.insufficient-credits {
+  color: @muted-red;
+}
+
+.availability-highlighter {
+  position: absolute;
+  background-color: rebeccapurple;
+  opacity: .25;
+}
+
+#page-view-reservation {
+  .participationAction {
+    margin-bottom: 5px;
+  }
+}
+
+#page-reservation {
+
+  .form-control.timeinput.input-sm {
+    padding: 0px;
+  }
+
+  .resourceDetails {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+#user-availability-box {
+  table.reservations td.resourcename {
+    color: #333;
+  }
+}
+
+#page-reservation {
+  width: 100%;
+  margin: -1rem auto 0 auto;
+
+  .reservation-section {
+    display: flex;
+    width: 100%;
+
+    .reservation-icon-section {
+      width: 50px;
+      background-color: @light-gray;
+      border-right: solid 1px @mid-gray;
+      padding-top: 1rem;
+      text-align: center;
+
+      .bi {
+        font-size: 1.5rem;
+      }
+    }
+
+    .reservation-content-section {
+      flex: 1;
+      border-bottom: solid 1px #f0f0f0;
+      padding: .7rem 1rem;
+    }
+  }
+
+  .reservation-section:last-child {
+    flex: 1 1 auto;
+    padding: 0;
+  }
+
+  .reservation-top-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: .5rem 1rem;
+    border-bottom: solid 1px @mid-gray;
+    align-items: center;
+
+    .reservation-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .reservation-buttons {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .reservation-content {
+    overflow-y: scroll;
+    height: calc(100vh - 130px);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .reservation-time-dropdown {
+    margin-left: .5rem;
+    margin-top: 2.1rem;
+  }
+
+  .reservation-errors {
+    font-size: .9rem;
+    color: @muted-red;
+  }
+
+  .reservation-waitlist-notice {
+    font-size: .8rem;
+    border: solid 1px #ef9400;
+    background-color: #fef7ea;
+    border-radius: 3px;
+    padding: 6px;
+    display: inline-block;
+  }
+
+  .reservation-date-picker {
+    width: 120px;
+  }
+
+  .reservation-label, .recurrence-label {
+    font-weight: 200;
+    font-size: 1.1rem;
+  }
+
+  .reservation-resource, .reservation-group {
+    display: inline-block;
+    padding: .3rem .5rem;
+    color: @color-secondary-2-3;
+    background-color: @color-secondary-2-1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+
+    i {
+      margin-left: .5rem;
+    }
+  }
+
+  .reservation-group {
+    color: #000;
+    background-color: transparent;
+    padding-left: 0;
+  }
+
+  .btn-link {
+    text-decoration: none;
+  }
+
+  .reservation-accessory {
+    display: inline-block;
+    padding: .3rem .5rem;
+    color: darken(#cfd4e4, 50%);
+    background-color: #cfd4e4;
+    border-radius: 5px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+
+    .reservation-accessory-quantity, .reservation-accessory-name {
+      display: inline-block;
+    }
+
+    .reservation-accessory-quantity {
+      background-color: #9198a0;
+      margin-right: .5rem;
+    }
+  }
+
+  .reservation-owner-credits {
+    height: 1rem;
+    font-size: .85rem;
+
+    .insufficient-credits {
+      color: @muted-red;
+    }
+
+    .credit-value {
+      margin-left: 3px;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .reservation-credits-spinner {
+    height: 1rem;
+
+    .spinner-border {
+      width: .85rem;
+      height: .85rem;
+      border-width: .1em;
+    }
+  }
+
+  .reservation-badge {
+    background-color: #9198a0;
+  }
+
+  table.reservations {
+    thead td {
+      position: inherit;
+    }
+
+    .reserved {
+      cursor: default;
+    }
+
+  }
+
+  .reservation-availability {
+    position: relative;
+  }
+
+  .reservation-user-select {
+    width: 50%;
+  }
+
+  .reservation-upload-file {
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    padding: 0 4px;
+    background-color: #fafafa;
+  }
+
+  .reservation-attachment-drop {
+    cursor: pointer;
+
+    .bi {
+      font-size: 1.5rem;
+    }
+  }
+
+  .reservation-saving-modal-content {
+    min-height: 50vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .reservation-save-message-header {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .reservation-save-result-icon {
+      font-size: 4rem;
+    }
+
+    .reservation-save-result-icon.error {
+      color: @muted-red;
+    }
+
+    .reservation-save-result-icon.success {
+      color: @primary-green;
+    }
+
+    .reservation-save-message-pending {
+      background-color: @yellow-alert;
+      border: solid 1px darken(@yellow-alert, 20);
+      border-radius: 5px;
+      margin: .25rem 0;
+      padding: .25rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+
+    .reservation-save-message-notice {
+      font-weight: 600;
+      margin: 1rem 0;
+    }
+  }
+
+  .reservation-recurring-modal, .reservation-delete-modal {
+    .reservation-recurring-notice {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: @dark-gray;
+    }
+
+    hr {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .reservation-action-bar {
+    background-color: @yellow-alert;
+
+    .btn {
+      background-color: darken(@yellow-alert, 30);
+      border-color: darken(@yellow-alert, 40);
+      min-width: 140px;
+    }
+
+    .btn:hover {
+      background-color: darken(@yellow-alert, 10);
+    }
+
+    .reservation-checkin-autorelease-notification {
+      color: @dark-gray;
+    }
+  }
+
+  .reservation-checkin-past-time {
+    background-color: #f8d7da;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  //.reservation-recurring-buttons {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  flex-wrap: wrap;
+  //}
+
+  .reservation-content-readonly .attribute-label {
+    font-weight: 600;
+    margin-right: .25rem;
+  }
+
+  .reservation-participation-errors {
+    text-align: left;
+    display: block;
+  }
+
+  .reservation-owner-name {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .selected-appointment, .available-appointment {
+    cursor: pointer;
+    border: solid 1px @dark-gray;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 4px;
+    font-size: .9em;
+    color: @dark-gray;
+  }
+
+  .selected-appointment {
+    background-color: #def4ff;
+    color: #000;
+    border-color: @almost-black;
+  }
+
+  .resource-group-tree-item, .resource-picker {
+    .form-check-input {
+      margin-top: 9px;
+    }
+  }
+
+  .reservation-resource-picker-modal .reservation-resource {
+    cursor: default;
+  }
+
+  .reservation-meeting-link-options {
+    width: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  #page-reservation {
+    .reservation-user-select {
+      width: 100%;
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+@media print {
+  * {
+    display: block;
+  }
+  script,
+  style {
+    display: none;
+  }
+  #page-reservation .reservation-content {
+    height: 100%;
+    overflow-y: visible;
+    break-inside: avoid;
+  }
+  #page-reservation .reservation-top-bar {
+    display: none;
+  }
+  #page-reservation .reservation-section,
+  #page-reservation .reservation-content-section {
+    display: table;
+    width: 100%;
+    overflow-y: visible;
+  }
+  #page-reservation .reservation-icon-section {
+    display: none;
+  }
+  #page-reservation #reservation-details-section {
+    overflow-y: visible;
+    display: table;
+  }
+  #page-reservation #reservation-details-section .col-12,
+  #page-reservation #reservation-details-section .col-lg-6,
+  #page-reservation #reservation-details-section .col-xl-4 {
+    width: 100%;
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}

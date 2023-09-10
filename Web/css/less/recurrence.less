@@ -1,0 +1,48 @@
+@import "colors.less";
+
+.recurrence {
+  .recurrence-label {
+    min-width: 100px;
+  }
+
+  .recurrence-row {
+    display: flex;
+    margin-top: .5rem;
+    flex-wrap: wrap;
+  }
+
+  .repeat-date-list {
+    width: 100%;
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+
+    .repeat-date-item {
+      margin-right: 1rem;
+      align-items: center;
+      display: flex;
+
+      .btn, .btn-link {
+        margin: 0;
+        padding: 0;
+        color: @muted-red;
+        font-weight: 600;
+      }
+
+      .bi {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  select {
+    width: auto;
+  }
+}
+
+.recur-toggle {
+  .form-check-inline {
+    margin: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,25 @@
+<?php
+/**
+Copyright 2012-2023 Twinkle Toes Software, LLC
+*/
+
+// see http://pear.php.net/manual/en/package.networking.net-ldap2.connecting.php
+
+$conf['settings']['host'] = 'localhost'; // comma separated list of ldap servers such as mydomain1,localhost
+$conf['settings']['port'] = '389';      // default ldap port 389 or 636 for ssl.
+$conf['settings']['version'] = '3';		// LDAP protocol version
+$conf['settings']['starttls'] = 'false';	// TLS is started after connecting
+$conf['settings']['use.ssl'] = 'false';	// whether or not to connect over ssl
+$conf['settings']['binddn'] = '';	// The distinguished name to bind as (username). If you don't supply this, an anonymous bind will be established.
+$conf['settings']['bindpw'] = '';	// Password for the binddn. If the credentials are wrong, the bind will fail server-side and an anonymous bind will be established instead. An empty bindpw string requests an unauthenticated bind.
+$conf['settings']['basedn'] = '';	// LDAP base name (eg. dc=example,dc=com)
+$conf['settings']['filter'] = '';	// Default search filter
+$conf['settings']['scope'] = '';	// Search scope (eg. uid)
+$conf['settings']['required.group'] = '';	// Required group (empty if not necessary) (eg. cn=MyGroup,cn=Groups,dc=example,dc=com)
+$conf['settings']['database.auth.when.ldap.user.not.found'] = 'false';	// if ldap auth fails, authenticate against Booked Scheduler database
+$conf['settings']['ldap.debug.enabled'] = 'false';	// if LDAP2 should use debug logging
+$conf['settings']['attribute.mapping'] = 'sn=sn,givenname=givenname,mail=mail,telephonenumber=telephonenumber,physicaldeliveryofficename=physicaldeliveryofficename,title=title';	// mapping of required attributes to attribute names in your directory
+$conf['settings']['user.id.attribute'] = 'uid';	// the attribute name for user identification
+$conf['settings']['sync.groups'] = 'false';
+$conf['settings']['prevent.clean.username'] = 'false';	// If the username is an email address or contains the domain, clean it
+?>

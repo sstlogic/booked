@@ -1,0 +1,1 @@
+username,email,first name,last name,password,phone country,phone,organization,position,timezone,language,groups,status,color{foreach from=$attributes item=attribute},{$attribute->Label()|escape:'quotes'}{/foreach}

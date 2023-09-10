@@ -1,0 +1,28 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* Main Secondary color (1) */
+/* Main Primary color */
+/* Main Complement color */
+#page-manage-groups #groupList .btn {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+#page-manage-groups #groupList .btn-group .btn {
+  padding: 0.25rem 0.5rem;
+}
+#page-manage-groups .permissionRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+#page-manage-groups .modal .btn-link {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+#page-manage-groups .credits-number {
+  width: 100px;
+}
